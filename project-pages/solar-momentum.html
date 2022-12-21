@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+    <script src="https://kit.fontawesome.com/460480b505.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="center-cursor"></div>
+    <header>
+        <div class="head-wrapper">
+            <div class="left-head ">
+                <span class="logo hover"> 
+                    <a href="#" class="hover">DeonSanchez._</a>
+                </span>
+                
+            </div>
+            <div class="right-head">
+                <nav >
+                    <ul class="nav-bar hover">
+                        <li class="nav-li">
+                            <a href="/index.html">
+                                <div class="num">01</div>
+                                <div class="current">// home</div>
+                            </a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#expertise">
+                                <div class="num">02</div>
+                                <div class="current">// expertise</div>
+                            </a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#work">
+                                <div class="num">03</div>
+                                <div class="current">// work</div>
+                            </a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#">
+                                <div class="num">04</div>
+                                <div class="current">// experince</div>
+                            </a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#">
+                                <div class="num">05</div>
+                                <div class="current">// contact</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <input  type="checkbox" id="check" >
+    <label class="check hover" for="check">
+        <i class="fa-solid fa-bars"></i>
+        <span class="mobileLogo hover"> 
+            <a href="#" class="hover">DeonSanchez._</a>
+        </span>
+    </label>
+    <div class="nav2 stick1">
+        <ul class="nav-bar hover">
+            <li class="nav-li" onclick="uncheck()">
+                <a href="#" >
+                    <div class="num">01</div>
+                    <div class="current">// home</div>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#expertise" onclick="uncheck()">
+                    <div class="num">02</div>
+                    <div class="current">// expertise</div>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#work" onclick="uncheck()">
+                    <div class="num">03</div>
+                    <div class="current">// work</div>
+                </a>
+            </li>
+            <li class="nav-li" >
+                <a href="#" onclick="uncheck()">
+                    <div class="num">04</div>
+                    <div class="current">// experince</div>
+                </a>
+            </li>
+            <li class="nav-li" >
+                <a href="#" onclick="uncheck()">
+                    <div class="num">05</div>
+                    <div class="current">// contact</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="main-project">
+        <div class="project-section-wrapper">
+            <div class="top">
+                <div class="up">
+                    <span>Web Development</span>
+                    <h1>Urban thinker - Consulting Firm</h1>
+                    
+                </div>
+                <div class="down">
+                    
+                    <div class="d-wrap">
+                        <ul class="breadcrumb">
+                            <li><a class="hover" href="/index.html">Home</a><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a class="hover" href="/index.html">Portfolio</a><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Urban Thinker Consulting Firm</li>
+                        </ul>
+                        <p>Khora Urban Thinkers works on the complexity of urban challenges with creativity, design and innovation. We go one step further with a team that is diverse and passionate for cities that implements sustainable urban solutions from the idea to their execution. Natives of the public sector, we work on cities from urban planning, environment, technology and economy with a people-centred focus.</p>
+                    </div>
+                    <div class="right">
+                        <span class="hover"> <p>Open Project</p> <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="p-img-wrap">
+                    <img src="../images/solar-full.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-switch">
+        <div class="image-con">
+            
+        </div>
+        <div class="bottom">
+            <div class="next-p">
+                <div class="title">
+                    <h6>Next Project</h6>
+                </div>
+                
+                <div class="arrows">
+                    <div class="left hover">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="right hover">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="b-title">
+                <a href="#" class="hover">Urban Thinkers -Consulting Firm</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+        const centerCursor = document.querySelector('.center-cursor');
+        let hover = Array.from(document.querySelectorAll(".hover"));
+        
+        document.addEventListener('mousemove', cursorMove);
+        
+        function cursorMove(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            centerCursor.style.left = x + 'px';
+            centerCursor.style.top = y + 'px';
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+        }
+
+        hover.forEach(link => {
+            link.addEventListener("mouseover", () =>{
+            centerCursor.classList.add("grow")
+            })
+            link.addEventListener("mouseleave", () =>{
+            centerCursor.classList.remove("grow")
+            })
+        })
+
+    </script>
+</body>
+</html>
