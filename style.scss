@@ -770,6 +770,10 @@ header{
                     align-items: center;
                     border-radius: 50%;
 
+                    a{
+                        color: black;
+                    }
+
                     i{
                         font-size: 22px;
                     }
@@ -1225,6 +1229,7 @@ header{
         margin: auto;
         width: 100%;
         right: 0;
+
     }
 
     .contact{

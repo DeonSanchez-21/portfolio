@@ -1,194 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Deon Sanchez - Front-end Developer</title>
-        <link rel="stylesheet" href="./dist/css/style.min.css">
-        <script src="https://kit.fontawesome.com/460480b505.js" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-        <div class="cursor"></div>
-        <div class="center-cursor"></div>
-        <header>
-            <div class="head-wrapper">
-                <div class="left-head ">
-                    <span class="logo hover"> 
-                        <a href="#" class="hover">DeonSanchez._</a>
-                    </span>
-                </div>
-                <div class="right-head">
-                    <nav >
-                        <ul class="nav-bar hover">
-                            <li class="nav-li">
-                                <a href="#">
-                                    <div class="num">01</div>
-                                    <div class="current">// home</div>
-                                </a>
-                            </li>
-                            <li class="nav-li">
-                                <a href="#expertise">
-                                    <div class="num">02</div>
-                                    <div class="current">// expertise</div>
-                                </a>
-                            </li>
-                            <li class="nav-li">
-                                <a href="#work">
-                                    <div class="num">03</div>
-                                    <div class="current">// work</div>
-                                </a>
-                            </li>
-                            <li class="nav-li">
-                                <a href="#contact">
-                                    <div class="num">04</div>
-                                    <div class="current">// contact</div>
-                                </a>
-                            </li>
-                            <!-- <li class="nav-li">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deon Sanchez - Front-end Developer</title>
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <script src="https://kit.fontawesome.com/460480b505.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="center-cursor"></div>
+    <header>
+        <div class="head-wrapper">
+            <div class="left-head ">
+                <span class="logo hover">
+                    <a href="#" class="hover">DeonSanchez._</a>
+                </span>
+            </div>
+            <div class="right-head">
+                <nav>
+                    <ul class="nav-bar hover">
+                        <li class="nav-li">
+                            <a href="#">
+                                <div class="num">01</div>
+                                <div class="current">// home</div>
+                            </a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#expertise">
+                                <div class="num">02</div>
+                                <div class="current">// expertise</div>
+                            </a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#work">
+                                <div class="num">03</div>
+                                <div class="current">// work</div>
+                            </a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#contact">
+                                <div class="num">04</div>
+                                <div class="current">// contact</div>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-li">
                                 <a href="#">
                                     <div class="num">05</div>
                                     <div class="current">// contact</div>
                                 </a>
                             </li> -->
-                        </ul>
-                    </nav>
-                </div>
+                    </ul>
+                </nav>
             </div>
-        </header>
-        <input  type="checkbox" id="check" >
-        <label class="check hover" for="check">
-            <i class="fa-solid fa-bars"></i>
-            <span class="mobileLogo hover"> 
-                <a href="#" class="hover">DeonSanchez._</a>
-            </span>
-        </label>
-        <div class="nav2 stick1">
-            <ul class="nav-bar hover">
-                <li class="nav-li" onclick="uncheck()">
-                    <a href="#" >
-                        <div class="num">01</div>
-                        <div class="current">// home</div>
-                    </a>
-                </li>
-                <li class="nav-li">
-                    <a href="#expertise" onclick="uncheck()">
-                        <div class="num">02</div>
-                        <div class="current">// expertise</div>
-                    </a>
-                </li>
-                <li class="nav-li">
-                    <a href="#work" onclick="uncheck()">
-                        <div class="num">03</div>
-                        <div class="current">// work</div>
-                    </a>
-                </li>
-                <li class="nav-li" >
-                    <a href="#contact" onclick="uncheck()">
-                        <div class="num">04</div>
-                        <div class="current">// contact</div>
-                    </a>
-                </li>
-                <!-- <li class="nav-li" >
+        </div>
+    </header>
+    <input type="checkbox" id="check">
+    <label class="check hover" for="check">
+        <i class="fa-solid fa-bars"></i>
+        <span class="mobileLogo hover">
+            <a href="#" class="hover">DeonSanchez._</a>
+        </span>
+    </label>
+    <div class="nav2 stick1">
+        <ul class="nav-bar hover">
+            <li class="nav-li" onclick="uncheck()">
+                <a href="#">
+                    <div class="num">01</div>
+                    <div class="current">// home</div>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#expertise" onclick="uncheck()">
+                    <div class="num">02</div>
+                    <div class="current">// expertise</div>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#work" onclick="uncheck()">
+                    <div class="num">03</div>
+                    <div class="current">// work</div>
+                </a>
+            </li>
+            <li class="nav-li">
+                <a href="#contact" onclick="uncheck()">
+                    <div class="num">04</div>
+                    <div class="current">// contact</div>
+                </a>
+            </li>
+            <!-- <li class="nav-li" >
                     <a href="#" onclick="uncheck()">
                         <div class="num">05</div>
                         <div class="current">// contact</div>
                     </a>
                 </li> -->
-            </ul>
+        </ul>
+    </div>
+    <section class="hero-section">
+        <div class="background-overlay"></div>
+        <div class="hero-wrapper">
+            <h1 id="main_name">Deon Sanchez</h1>
+            <h2>Front-end developer.</h2>
+            <a href="#expertise" class="lottie-btn hover">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_Rq8jJk.json" background="transparent"
+                    speed="1" style="width: 60px; height: 60px;" loop autoplay></lottie-player>
+            </a>
         </div>
-        <section class="hero-section">
-            <div class="background-overlay"></div>
-            <div class="hero-wrapper">
-                <h1 id="main_name">Deon Sanchez</h1>
-                <h2 >Front-end developer.</h2>
-                <a href="#expertise" class="lottie-btn hover"><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_Rq8jJk.json"  background="transparent"  speed="1"  style="width: 60px; height: 60px;"  loop  autoplay></lottie-player></a>
-            </div>
-        </section>
+    </section>
 
-        <section id="expertise" class="expertise-section">
-            <div class="ex-wrapper">
-                <div class="title">
-                    <h1>My Expertise</h1>
-                </div>
-                <div class="ex-content">
-                    <div class="ex-li">
-                        <div class="top-ex">
-                            <i class="fa-solid fa-display"></i>
-                            <span> <span class="FE">Front-end</span>  Development</span>
-                        </div>
-                        <div class="bottom-ex">
-                            <div class="h3-1">
-                                <p>Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.</p>
-                            </div>
-                        </div>
+    <section id="expertise" class="expertise-section">
+        <div class="ex-wrapper">
+            <div class="title">
+                <h1>My Expertise</h1>
+            </div>
+            <div class="ex-content">
+                <div class="ex-li">
+                    <div class="top-ex">
+                        <i class="fa-solid fa-display"></i>
+                        <span> <span class="FE">Front-end</span> Development</span>
                     </div>
-                    <div class="ex-li">
-                        <div class="top-ex">
-                            <i class="fa-solid fa-code"></i>
-                            <span> <span class="FE1">Frontend Dev</span> <span>HTML, CSS, JS</span> </span>
-                        </div>
-                        <div class="bottom-ex">
-                            <div class="h3-1">
-                                <p>Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ex-li">
-                        <div class="top-ex">
-                            <i class="fa-brands fa-react"></i>
-                            <span> <span class="FE2">React Dev</span> <span>MUI, NextJS</span>  </span>
-                        </div>
-                        <div class="bottom-ex">
-                            <div class="h3-1">
-                                <p>Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ex-li extra">
-                        <div class="top-ex">
-                            <i class="fa-brands fa-react"></i>
-                            <span> <span class="FE2">React Dev</span> <span>MUI, NextJS</span> </span>
-                        </div>
-                        <div class="bottom-ex">
-                            <div class="h3-1">
-                                <p>Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.</p>
-                            </div>
+                    <div class="bottom-ex">
+                        <div class="h3-1">
+                            <p>Passionate about UI/UX. Over 3 years of development experience in HTML, CSS, JS, React
+                                and React frameworks.</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="back-wrap">
+                <div class="ex-li">
+                    <div class="top-ex">
+                        <i class="fa-solid fa-code"></i>
+                        <span> <span class="FE1">Frontend Dev</span> <span>HTML, SCSS, JS</span> </span>
+                    </div>
+                    <div class="bottom-ex">
+                        <div class="h3-1">
+                            <p>Experienced in creating accessable, and responsive websites using HTML, SCSS and Javascript.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ex-li">
+                    <div class="top-ex">
+                        <i class="fa-brands fa-react"></i>
+                        <span> <span class="FE2">React Dev</span> <span>MUI, Firebase</span> </span>
+                    </div>
+                    <div class="bottom-ex">
+                        <div class="h3-1">
+                            <p>Skilled in developing web apps with React and React libraries like Material UI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ex-li extra">
+                    <div class="top-ex">
+                        <i class="fa-brands fa-react"></i>
+                        <span> <span class="FE2">React Dev</span> <span>MUI, Firebase</span> </span>
+                    </div>
+                    <div class="bottom-ex">
+                        <div class="h3-1">
+                            <p>Skilled in developing web apps with React and react libraries like Material UI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="back-wrap">
                     <img src="./images/code.png" class="c-img" alt="">
                 </div> -->
+        </div>
+    </section>
+
+    <section id="work" class="work-section">
+
+        <div class="left">
+            <h1>My Work</h1>
+            <p>Deployed scalable travel, event and telemedicine web and hybrid mobile apps using React SPA and PWA.
+                Collaborated in 140+ projects with 50+ clients all around the world. I am also interested in data
+                analytics and visualization.</p>
+        </div>
+        <div class="right">
+            <div class="con">
+                <h4>featured project</h4>
+                <h3>urban thinkers</h3>
+                <a href="#">
+                    <button class="hover">View Project</button>
+                </a>
+
             </div>
-        </section>
 
-        <section id="work" class="work-section">
+        </div>
 
-            <div class="left">
-                <h1>My Work</h1>
-                <p>Deployed scalable travel, event and telemedicine web and hybrid mobile apps using React SPA and PWA.
-                    Collaborated in 140+ projects with 50+ clients all around the world. I am also interested in data analytics and visualization.</p>
-            </div>
-            <div class="right">
-                <div class="con">
-                    <h4>featured project</h4>
-                    <h3>urban thinkers</h3>
-                    <a href="#">
-                        <button class="hover">View Project</button>
-                    </a>
-                    
-                </div>
-                
-            </div>
-            
-        </section>
+    </section>
 
-        <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section">
 
-            <!-- <div class="filter-wrap">
+        <!-- <div class="filter-wrap">
                 <h2>Filter By</h2>
                 <ul class="filter-menu">
                     <li><h3>all</h3></li>
@@ -196,137 +203,141 @@
                     <li><h3>Web Pages</h3></li>
                 </ul>
             </div> -->
-            <div class="project-wrap">
-                <div class="project project1">
-                    <div href="./project-pages/solar-momentum.html" class="top hover"><a href="./project-pages/solar-momentum.html"><img src="./images/127.0.0.1_5501_index.html (5).png" alt=""></a></div>
-                    
-                    <div class="bottom">
-                        <h3> 
-                            <a href="./project-pages/solar-momentum.html">flight local</a>
-                        </h3>
-                        <div class="sub-div">
-                            <p class="p1">Web Development</p>
-                            <p class="p2 hover"> 
-                                <a href="./project-pages/solar-momentum.html">Show Project</a> 
+        <div class="project-wrap">
+            <div class="project project1">
+                <div href="./project-pages/solar-momentum.html" class="top hover"><a
+                        href="./project-pages/solar-momentum.html"><img src="./images/127.0.0.1_5501_index.html (5).png"
+                            alt=""></a></div>
+
+                <div class="bottom">
+                    <h3>
+                        <a href="./project-pages/project1.html">flight local</a>
+                    </h3>
+                    <div class="sub-div">
+                        <p class="p1">Web Development</p>
+                        <p class="p2 hover">
+                            <a href="./project-pages/project1.html">Show Project</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2">
+                <div class="top hover">
+                    <img src="./images/3point.png" alt="">
+                </div>
+
+                <div class="bottom">
+                    <h3>
+                        <a href="./project-pages/project2.html">flight local</a>
+                    </h3>
+                    <div class="sub-div">
+                        <p class="p1">Web Development</p>
+                        <p class="p2 hover"> <a href="./project-pages/project2.html">Show Project</a>
                             </p>
-                        </div>
                     </div>
                 </div>
-                <div class="project project2">
-                    <div class="top hover">
-                        <img src="./images/3point.png" alt="">
-                    </div>
-                    
-                    <div class="bottom">
-                        <h3> 
-                            <a href="#">flight local</a> 
-                        </h3>
-                        <div class="sub-div">
-                            <p class="p1">Web Development</p>
-                            <p class="p2 hover">Show Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project project3">
-                    <div class="top hover">
-                        <img src="./images/bb.png" alt="">
-                    </div>
-                    
-                    <div class="bottom">
-                        <h3> 
-                            <a href="#">flight local</a>
-                        </h3>
-                        <div class="sub-div">
-                            <p class="p1">Web Development</p>
-                            <p class="p2 hover">Show Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project project4">
-                    <div class="top hover">
-                        <img src="./images/127.0.0.1_5501_index.html (5).png" alt="">
-                    </div>
-                    
-                    <div class="bottom">
-                        <h3> <a href="#">flight local</a> </h3>
-                        <div class="sub-div">
-                            <p class="p1">Web Development</p>
-                            <p class="p2 hover">Show Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project project5">
-                    <div class="top hover">
-                        <img src="./images/127.0.0.1_5501_index.html (5).png" alt="">
-                    </div>
-                    
-                    <div class="bottom">
-                        <h3> 
-                            <a href="#">flight local</a>
-                        </h3>
-                        <div class="sub-div">
-                            <p class="p1">Web Development</p>
-                            <p class="p2 hover">Show Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project project6">
-                    <div class="top hover">
-                        <img src="./images/127.0.0.1_5501_index.html (5).png" alt="">
-                    </div>
-                    
-                    <div class="bottom">
-                        <h3> 
-                            <a href="#">flight local</a> 
-                        </h3>
-                        <div class="sub-div">
-                            <p class="p1">Web Development</p>
-                            <p class="p2 hover">Show Project</p>
-                        </div>
-                    </div>
-                </div>
-            
             </div>
-            
-        </section>
+            <div class="project project3">
+                <div class="top hover">
+                    <img src="./images/bb.png" alt="">
+                </div>
 
-        <section class="contact" id="contact">
-            <div class="title">
-                <h1>Contact</h1>
+                <div class="bottom">
+                    <h3>
+                        <a href="./project-pages/project3.html">flight local</a>
+                    </h3>
+                    <div class="sub-div">
+                        <p class="p1">Web Development</p>
+                        <p class="p2 hover"> <a href="./project-pages/project3.html">Show Project</a> </p>
+                    </div>
+                </div>
             </div>
-            
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <div class="dbl-field">
-                    <div class="field">
-                        <input id="first-name" type="text" placeholder="First Name">
-                    </div>
-                    <div class="field">
-                        <input id="last-name" type="text" placeholder="last Name">
-                    </div>
+            <div class="project project4">
+                <div class="top hover">
+                    <img src="./images/urban_cover.png" alt="">
                 </div>
-                <div class="dbl-field">
-                    <div class="field">
-                        <input id="phone-number" type="text" placeholder="Phone Number">
-                    </div>
-                    <div class="field">
-                        <input id="email" type="text" placeholder="Email Adress">
-                    </div>
-                </div>
-                <div class="message">
-                    <textarea id="message" placeholder="Write Your Message"></textarea>
-                </div>
-                <div class="button-area">
-                    <button class="hover" type="submit">Send Message</button>
-                </div>
-            </form>
 
-        </section>
+                <div class="bottom">
+                    <h3> <a href="./project-pages/project4.html">flight local</a> </h3>
+                    <div class="sub-div">
+                        <p class="p1">Web Development</p>
+                        <p class="p2 hover"> <a href="./project-pages/project4.html">Show Project</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project5">
+                <div class="top hover">
+                    <img src="./images/127.0.0.1_5501_index.html (5).png" alt="">
+                </div>
 
-        <a href="#" class="scrolltop hover stick2">
-            <i class="fa-solid fa-arrow-up"></i>
-        </a>
-        
-        <script src="./index.js"></script>
+                <div class="bottom">
+                    <h3>
+                        <a href="#">flight local</a>
+                    </h3>
+                    <div class="sub-div">
+                        <p class="p1">Web Development</p>
+                        <p class="p2 hover">Show Project</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project6">
+                <div class="top hover">
+                    <img src="./images/127.0.0.1_5501_index.html (5).png" alt="">
+                </div>
 
-    </body>
+                <div class="bottom">
+                    <h3>
+                        <a href="#">flight local</a>
+                    </h3>
+                    <div class="sub-div">
+                        <p class="p1">Web Development</p>
+                        <p class="p2 hover">Show Project</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h1>Contact</h1>
+        </div>
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="dbl-field">
+                <div class="field">
+                    <input id="first-name" type="text" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <input id="last-name" type="text" placeholder="last Name">
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                    <input id="phone-number" type="text" placeholder="Phone Number">
+                </div>
+                <div class="field">
+                    <input id="email" type="text" placeholder="Email Adress">
+                </div>
+            </div>
+            <div class="message">
+                <textarea id="message" placeholder="Write Your Message"></textarea>
+            </div>
+            <div class="button-area">
+                <button class="hover" type="submit">Send Message</button>
+            </div>
+        </form>
+
+    </section>
+
+    <a href="#" class="scrolltop hover stick2">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="./index.js"></script>
+
+</body>
+
 </html>
