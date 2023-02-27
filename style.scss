@@ -426,6 +426,22 @@ header{
         width: 55%;
         height: auto;
         position: relative;
+
+        .work-img{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            
+            
+            img{
+                width: 80%;
+                object-fit: cover;
+                border: none;
+                border-radius: 12px;
+            }
+
+            
+        }
         
         .con{
             position: absolute;
@@ -462,6 +478,12 @@ header{
                 &:hover{
                     cursor: pointer;
                 }
+            }
+            img{
+                width: 150px;
+                position: absolute;
+                right: -13rem;
+                top: -2rem;
             }
         }
     }
@@ -608,6 +630,7 @@ header{
                 
                 .d-wrap{
                     width: 50%;
+                    height: auto;
                     
                     .breadcrumb{
                         font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
@@ -642,10 +665,11 @@ header{
                     p{
                         color: #c6c5c6;
                         font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
-                        width: 80%;
+                        word-wrap: break-word;
                         font-size: 17px;
                         font-weight: 500;
-                        line-height: 1.7rem;
+                        height: auto;
+                        width: 80%;
                     }
                 }
                 
@@ -1149,7 +1173,7 @@ header{
                         width: 100%;
                         p{
                             margin:auto;
-                            width: 100%;
+                            width: 90%;
                         }
                     }
 
