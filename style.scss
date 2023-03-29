@@ -461,10 +461,11 @@ header{
         }
         
         .con{
-            position: absolute;
+            position: relative;
             bottom: 0;
             font-family: 'Poppins', sans-serif;
             left: 0;
+            padding-top: 2rem;
 
             h4{
                 font-size: 22px;
@@ -499,8 +500,8 @@ header{
             img{
                 width: 150px;
                 position: absolute;
-                right: -13rem;
-                top: -2rem;
+                right: 13rem;
+                top: 0;
             }
         }
     }
@@ -1133,6 +1134,158 @@ header{
     position: absolute;
     opacity: 0;
     pointer-events: none;
+}
+
+@media screen and (min-width: 1600px){
+    header{
+        .head-wrapper{
+            .right-head{
+                nav{
+                    .nav-bar{
+                        .nav-li{
+                            margin: 0 1.5rem;
+                            a{
+                                .current{
+
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav2{
+        .nav-bar{
+            .nav-li{
+                margin: 0 1.5rem;
+                a{
+                    .current{
+
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .hero-section{
+        .hero-wrapper{
+            h1{
+                font-size: 6rem;
+            }
+            h2{
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .expertise-section{
+        padding: 15rem 0;
+        .ex-wrapper{
+            .title{
+                h1{
+                    font-size: 6rem;
+                }
+            }
+            .ex-content{
+                .ex-li{
+                    padding: 1rem;
+                    .top-ex{
+                        span{
+                            font-size: 2rem;
+                        }
+                    }
+                    .bottom-ex{
+                        .h3-1{
+                            p{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .work-section{
+        .right{
+            .work-img{
+                
+                
+                
+                img{
+
+                }
+    
+                
+            }
+            .con{
+                h4{
+                    font-size: 2rem;
+                }
+                h3{
+                    font-size: 3rem;
+                }
+                img{
+                    right: 30%;
+                    width: 200px;
+                }
+                a{
+                    button{
+                        font-size: 1rem;
+                        width: 200px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        .left{
+  
+
+            h1{
+                font-size: 6rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+            
+        }
+    }
+    .projects-section{
+        .project-wrap{
+            .project{
+                grid-row: span 7;
+            }
+            .project4{
+                grid-row: span 9;
+            }
+        }
+    }
+    .contact{
+        .title{
+            h1{
+                font-size: 6rem;
+            }
+        }
+        form{
+            .message{
+                textarea{
+                    height: 300px;
+                }
+            }
+            .dbl-field{
+                .field{
+                    input{
+                        padding: 1.5rem;
+                    }
+                }
+            }
+            .button-area{
+                button{
+                    padding: 1.5rem;
+                }
+            }
+        }
+    }
 }
 
 
