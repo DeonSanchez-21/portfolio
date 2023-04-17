@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./images/coding.png" />
     <title>Deon Sanchez - Front-end Developer</title>
     <link rel="stylesheet" href="./dist/css/style.min.css">
     <script src="https://kit.fontawesome.com/460480b505.js" crossorigin="anonymous"></script>
@@ -297,7 +298,7 @@
                     </div>
                     <ul class="con-list">
                         <li>
-                            <a target="_blank" href="#" class="hover">Messenger</a>
+                            <a target="_blank" href="https://m.me/deon.sanchez.547" class="hover">Messenger</a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.linkedin.com/in/deon-sanchez-2b5107259/" class="hover">LinkedIn</a>
@@ -308,25 +309,25 @@
                     </ul>
                 </div>
             </div>
-            <form class="fade-in animate" onsubmit="sendEmail(); reset(); return false;">
+            <form class="fade-in animate" action="https://formsubmit.co/deonsanchez6@gmail.com" method="POST" >
                 <div class="dbl-field">
                     <div class="field hover">
-                        <input id="first-name" type="text" placeholder="First Name">
+                        <input type="text" name="firt-name" required id="first-name" type="text" placeholder="First Name">
                     </div>
                     <div class="field hover">
-                        <input id="last-name" type="text" placeholder="last Name">
+                        <input type="text" name="last-name" id="last-name" type="text" placeholder="last Name">
                     </div>
                 </div>
                 <div class="dbl-field">
                     <div class="field hover">
-                        <input id="phone-number" type="text" placeholder="Phone Number">
+                        <input type="text" name="phone" id="phone-number" type="text" placeholder="Phone Number">
                     </div>
                     <div class="field hover">
-                        <input id="email" type="text" placeholder="Email Adress">
+                        <input type="email" name="email" required id="email" type="text" placeholder="Email Adress">
                     </div>
                 </div>
                 <div class="message  hover">
-                    <textarea id="message" placeholder="Write Your Message"></textarea>
+                    <textarea required name="massage" id="message" placeholder="Write Your Message"></textarea>
                 </div>
                 <div class="button-area">
                     <button class="hover" type="submit">Send Message</button>
