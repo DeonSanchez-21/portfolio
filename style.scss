@@ -1384,7 +1384,6 @@ header{
 
 @media screen and (max-width: 768px) {
 
-   
     nav{
         display: none;
     }
@@ -1469,8 +1468,19 @@ header{
     .projects-section{
 
         .project-wrap{
-            grid-template-columns: repeat(1, 1fr);
-            grid-auto-rows: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .project{
+                .top{
+                    max-height: 450px;
+                }
+                .bottom{
+                    height: 150px;
+                }
+            }
 
             .project4{
                 grid-row: span 5;
@@ -1562,6 +1572,48 @@ header{
                 }
                 .extra{
                     display: none;
+                }
+            }
+        }
+    }
+
+    .work-section{
+        flex-direction: column;
+        .left{
+            width: 100%;
+
+            h1{
+                font-size: 60px;
+            }
+            
+        }
+        .right{
+            width: 100%;
+            padding: 2rem;
+
+            .work-img{
+                width: 100%;
+                img{
+                    width: 90%;
+                }
+            }
+
+            .con{
+                position: relative;
+            }
+        }
+    }
+
+    .projects-section{
+
+        .project-wrap{
+
+            .project{
+                .top{
+                    max-height: 275px;
+                }
+                .bottom{
+                    height: 120px;
                 }
             }
         }
