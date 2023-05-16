@@ -425,17 +425,17 @@ header{
     .left{
         width: 45%;
         height: auto;
-        padding: 4rem;
+        padding: 1rem 4rem;
 
         h1{
-            font-size: 6.5rem;
+            font-size: 6rem;
             font-family: 'Poppins', sans-serif;
             width: 3rem;
             padding-bottom: 1rem;
         }
         p{
             font-family: 'Roboto Mono', monospace;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
         }
     }
@@ -443,6 +443,7 @@ header{
     .right{
         width: 55%;
         height: auto;
+        padding-top: 2rem;
         position: relative;
 
         .work-img{
@@ -450,15 +451,12 @@ header{
             height: auto;
             margin: auto;
             
-            
             img{
                 width: 80%;
                 object-fit: cover;
                 border: none;
                 border-radius: 12px;
             }
-
-            
         }
         
         .con{
