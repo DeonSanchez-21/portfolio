@@ -247,12 +247,12 @@ header{
         h2{
             font-family: 'Roboto Mono', monospace;
             letter-spacing: 3px;
-        
+            position: relative;
         }
 
         .lottie-btn{
             margin-top: 6rem;
-
+            position: relative;
         }
     }
 }
@@ -275,6 +275,11 @@ header{
             font-size: 3rem;
             font-family: 'Poppins', sans-serif;
             color: #fff;
+            position: relative;
+
+            h1{
+                position: relative;
+            }
         }
 
         .ex-content{
@@ -432,11 +437,13 @@ header{
             font-family: 'Poppins', sans-serif;
             width: 3rem;
             padding-bottom: 1rem;
+            position: relative;
         }
         p{
             font-family: 'Roboto Mono', monospace;
             font-size: 18px;
             font-weight: 500;
+            position: relative;
         }
     }
 
@@ -571,6 +578,7 @@ header{
                 .sub-div{
                     padding-left: 1rem;
                     transition: all 0.25s;
+                    
 
                     p{
                         color: #bfbec0;
@@ -587,6 +595,7 @@ header{
                         width: 8rem;
                         transition: all 0.5s;
                         margin-top: 6rem;
+                        position: relative;
 
                         a{
                             color: #bfbec0;
@@ -784,17 +793,18 @@ header{
                     left: 1rem;
                     height: 3rem;
                     width: 3rem;
-                    background-color:#f0f1f8;
+                    background: rgba(21,28,38,0.2);
                     z-index: 9;
                     border-radius: 5px;
                     border: none;
                     display: flex;
                     align-items: center;
+                    backdrop-filter: blur(5px);
                     justify-content: center;
                     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
                     i{
-                        color:black;
+                        color:white;
                         z-index: 10;
                         font-size: 1.2rem;
                     }
@@ -926,6 +936,7 @@ header{
         align-items: center;
         justify-content: center;
         width: 100%;
+        position: relative;
     }
     .title{
         width: 100%;
@@ -988,6 +999,7 @@ header{
                 }
             }
             .con-list{
+                position: relative;
                 
                 li{
                     list-style-type: none;
@@ -1668,6 +1680,18 @@ header{
     transition-delay: 0.3s;
 }
 
+.slide-up{
+    transition: all .7s ease-out;
+    transition-delay: 0.3s;
+    top: 10%
+}
+.slide-up-btn{
+    transition: all 1s ease-out;
+    transition-delay: 0.7s;
+    top: 20%
+}
+
 .animate.slide{
+    top: 0;
     opacity: 1;
 }
